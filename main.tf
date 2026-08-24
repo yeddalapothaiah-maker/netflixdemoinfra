@@ -6,7 +6,7 @@ resource "aws_instance" "one" {
   count                  = 3
   ami                    = "ami-0ac7b260cf76d8865"
   instance_type          = "c7i-flex.large"
-  key_name               = "pothaiahdocker"
+  key_name               = "abc"
   vpc_security_group_ids = ["sg-052610925a2a09c3d"]
   tags = {
     Name = var.instance_names[count.index]
@@ -18,7 +18,7 @@ variable "instance_names" {
 }
 
 resource "aws_s3_bucket" "one" {
-  bucket = "pothaiah"
+  bucket = "pothaiah-devops-2026-8247"
   versioning {
     enabled = true
   }
