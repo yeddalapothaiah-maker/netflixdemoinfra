@@ -21,7 +21,5 @@ variable "instance_names" {
  data "aws_s3_bucket" "one" {
   bucket = "pothaiah-devops-2026-8247"
 }
-  versioning_configuration {
-  }
 
 
