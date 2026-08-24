@@ -20,7 +20,12 @@ variable "instance_names" {
 
 resource "aws_s3_bucket" "one" {
   bucket = "pothaiah-devops-2026-8247"
-  versioning {
-    enabled = true
 }
+
+resource "aws_s3_bucket_versioning" "one" {
+  bucket = aws_s3_bucket.one.id
+
+  versioning_configuration {
+    status = "Enabled"
+  }
 }
