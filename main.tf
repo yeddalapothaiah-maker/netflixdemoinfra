@@ -22,6 +22,6 @@ variable "instance_names" {
   bucket = "pothaiah-devops-2026-8247"
 }
   versioning_configuration {
-    status = "Enabled"
   }
+
 
