@@ -18,7 +18,7 @@ variable "instance_names" {
   default = ["jenkins", "tomcat-1", "tomcat-2"]
 }
 
-resource "aws_s3_bucket" "one" {
+resource "aws_s3_bucket" "two" {
   bucket = "pothaiah-devops-2026-8247"
 }
 
