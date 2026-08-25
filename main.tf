@@ -19,7 +19,7 @@ variable "instance_names" {
 }
 
 resource "aws_s3_bucket" "two" {
-  bucket = "pothaiah-devops-2026-8247"
+  bucket = "pothaiah-devops-2026-82478"
 }
 
 resource "aws_s3_bucket_versioning" "one" {
