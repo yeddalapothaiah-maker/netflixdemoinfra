@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "one" {
   count                  = 3
   ami                    = "ami-091b599f5f318ddd2"
-  instance_type          = "t3.medium"
+  instance_type          = "c7i-flex.large"
   key_name               = "pothaiah"
   vpc_security_group_ids = ["sg-0b55ac8354f5fc3a5"]
 
