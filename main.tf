@@ -23,7 +23,7 @@ resource "aws_s3_bucket" "two" {
 }
 
 resource "aws_s3_bucket_versioning" "one" {
-  bucket = aws_s3_bucket.one.id
+  bucket = aws_s3_bucket.pothaiah.id
 
   versioning_configuration {
     status = "Enabled"
